@@ -4,7 +4,7 @@ html {
 
 h1 {
   color: #990073;
-  transform: rotate(-8deg);
+  transform: rotate(-9deg);
   transform-origin: left center;
 }
 
@@ -34,8 +34,8 @@ h1 {
 }
 
 .banner-content {
-  left: 40px;
-  top: 72px;
+  left: 52px;
+  top: 95px;
   text-shadow: 1px 1px rgba(0, 0, 0, .25);
   opacity: 0;
   animation: banner-content 1s 1.5s linear forwards;
@@ -51,7 +51,7 @@ h1 {
 
 .cone {
   bottom: 10px;
-  left: 50px;
+  left: 85px;
   z-index: 4;
   transform: translate(-100rem);
   animation: cone 1s linear forwards;
@@ -59,7 +59,7 @@ h1 {
 
 .mint-chip {
   bottom: 115px;
-  left: 50px;
+  left: 85px;
   z-index: 1;
   transform: translate(-100rem);
   animation: cone 1s .5s linear forwards;
@@ -67,7 +67,7 @@ h1 {
 
 .choco-chip {
   bottom: 195px;
-  left: 50px;
+  left: 85px;
   z-index: 2;
   transform: translate(-100rem);
   animation: cone 1s 1s linear forwards;
@@ -75,7 +75,7 @@ h1 {
 
 .vanilla {
   bottom: 280px;
-  left: 50px;
+  left: 85px;
   z-index: 3;
   transform: translate(-100rem);
   animation: cone 1s 1.5s linear forwards;
@@ -83,7 +83,7 @@ h1 {
 
 .cherry {
   bottom: 360px;
-  left: 50px;
+  left: 85px;
   z-index: 5;
   transform: translate(-100rem);
   animation: cone 1s 2s linear forwards;
