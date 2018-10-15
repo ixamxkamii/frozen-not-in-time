@@ -4,11 +4,15 @@ html {
 
 h1 {
   color: #990073;
+  transform: rotate(-8deg);
+  transform-origin: left center;
 }
 
 .content {
   color: #c09;
   max-width: 19em;
+  transform: rotate(-5deg);
+  transform-origin: left center;
 }
 
 .btn-ghost {
@@ -32,9 +36,81 @@ h1 {
 .banner-content {
   left: 40px;
   top: 72px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px rgba(0, 0, 0, .25);
+  opacity: 0;
+  animation: banner-content 1s 1.5s linear forwards;
 }
 
-.ice-cone {
+.whole-cone {
   min-height: 490px;
+}
+
+.cone-content {
+  height: 175px;
+}
+
+.cone {
+  bottom: 10px;
+  left: 50px;
+  z-index: 4;
+  transform: translate(-100rem);
+  animation: cone 1s linear forwards;
+}
+
+.mint-chip {
+  bottom: 115px;
+  left: 50px;
+  z-index: 1;
+  transform: translate(-100rem);
+  animation: cone 1s .5s linear forwards;
+}
+
+.choco-chip {
+  bottom: 195px;
+  left: 50px;
+  z-index: 2;
+  transform: translate(-100rem);
+  animation: cone 1s 1s linear forwards;
+}
+
+.vanilla {
+  bottom: 280px;
+  left: 50px;
+  z-index: 3;
+  transform: translate(-100rem);
+  animation: cone 1s 1.5s linear forwards;
+}
+
+.cherry {
+  bottom: 360px;
+  left: 50px;
+  z-index: 5;
+  transform: translate(-100rem);
+  animation: cone 1s 2s linear forwards;
+}
+
+@keyframes banner-content {
+
+  0% {
+    opacity: 0;
+    filter: blur(7px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    transform: translateY(-100rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
 }
